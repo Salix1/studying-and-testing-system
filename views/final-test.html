@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Тест</title>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h2>Тест на проверку знаний</h2>
+        </div>
+        <div class="textarea">
+            <form id="qForm" action="/results" target="_blank" method='POST'>
+                <div class="person-info">
+                    <label>
+                        Ваше ФИО:
+                        <input type="text" name='name' minlength="5" maxlength="75" autocomplete="off" required>
+                    </label>
+                    <br>
+                    <label>
+                        Ваша группа:
+                        <select name="group" required>
+                            <option value="не указана">Не указывать/не студент</option>
+                            <option value="18ИТ-ПИ(б/о)ПИП-1">18ИТ-ПИ(б/о)ПИП-1</option>
+                            <option value="19ИТ-ПИ(б/о)ПИП-1">19ИТ-ПИ(б/о)ПИП-1</option>
+                            <option value="20ИТ-ПИ(б/о)ПИП-1">20ИТ-ПИ(б/о)ПИП-1</option>
+                            <option value="21ИТ-ПИ(б/о)ПИП-1">21ИТ-ПИ(б/о)ПИП-1</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">2<sup>25</sup> бит – сколько Мбайт?</h2>
+                    <label>
+                        <input type="radio" name="q-1" value="1" required>
+                        1 Мбайт
+                    </label>
+                    <label>
+                        <input type="radio" name="q-1" value="2">
+                        4 Мбайт
+                    </label>
+                    <label>
+                        <input type="radio" name="q-1" value="3">
+                        5 Мбайт
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">Определить максимальное количество страниц текста, содержащего по 80 символов в каждой строке и 64 строки на странице, которое может содержать файл, сохраненный на гибком магнитном диске объемом 10Кбайт. (кодировка ASCII)</h2>
+                    <label>
+                        <input type="radio" name="q-2" value="1" required>
+                        3 страницы
+                    </label>
+                    <label>
+                        <input type="radio" name="q-2" value="2">
+                        2 страницы
+                    </label>
+                    <label>
+                        <input type="radio" name="q-2" value="3">
+                        4 страницы
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">Определить объем видеопамяти в Килобайтах для графического файла размером 640x480 пикселей и палитрой из 32 цветов.</h2>
+                    <label>
+                        <input type="radio" name="q-3" value="1" required>
+                        141 Кбайт
+                    </label>
+                    <label>
+                        <input type="radio" name="q-3" value="2">
+                        77,3 Кбайт
+                    </label>
+                    <label>
+                        <input type="radio" name="q-3" value="3">
+                        187,5 Кбайт
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">Определить длительность звучания стереоаудиофайла, занимающего 468,75 Кбайт памяти при глубине звука 16 бит и частоте 48 кГц.</h2>
+                    <label>
+                        <input type="radio" name="q-4" value="1" required>
+                        2,5 сек
+                    </label>
+                    <label>
+                        <input type="radio" name="q-4" value="2">
+                        2 сек
+                    </label>
+                    <label>
+                        <input type="radio" name="q-4" value="3">
+                        5,2 сек
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">Найти Х, при котором равны информационные объемы 32<sup>х+3</sup> килобайт и 256<sup>х</sup> мегабайт.</h2>
+                    <label>
+                        <input type="radio" name="q-5" value="1" required>
+                        Х = 1/3
+                    </label>
+                    <label>
+                        <input type="radio" name="q-5" value="2">
+                        Х = 5/3
+                    </label>
+                    <label>
+                        <input type="radio" name="q-5" value="3">
+                        Х = 0
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">Два текста содержат одинаковое количество символов. Первый текст составлен в алфавите мощностью 8 символов, второй – 16 символов. Во сколько раз отличается количество информации в этих текстах?</h2>
+                    <label>
+                        <input type="radio" name="q-6" value="1" required>
+                        В 3/4 раз
+                    </label>
+                    <label>
+                        <input type="radio" name="q-6" value="2">
+                        В 2 раза
+                    </label>
+                    <label>
+                        <input type="radio" name="q-6" value="3">
+                        В 1/2 раз
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">Для хранения изображения размером 128x128 точек выделено 4 Кбайт памяти. Определите, какое максимальное число цветов в палитре.</h2>
+                    <label>
+                        <input type="radio" name="q-7" value="1" required>
+                        32 цвета
+                    </label>
+                    <label>
+                        <input type="radio" name="q-7" value="2">
+                        8 цветов
+                    </label>
+                    <label>
+                        <input type="radio" name="q-7" value="3">
+                        4 цвета
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">В течение трех минут производилась четырёхканальная (квадро) звукозапись с частотой дискретизации 16 КГц и 24-битным разрешением. Сжатие данных не производилось. Какая из приведенных ниже величин наиболее близка к размеру полученного файла?</h2>
+                    <label>
+                        <input type="radio" name="q-8" value="1" required>
+                        35 Мбайт
+                    </label>
+                    <label>
+                        <input type="radio" name="q-8" value="2">
+                        29 Мбайт
+                    </label>
+                    <label>
+                        <input type="radio" name="q-8" value="3">
+                        80 Мбайт
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">Найти значение Х из соотношения 4<sup>2-х</sup>Кб=16Мб</h2>
+                    <label>
+                        <input type="radio" name="q-9" value="1" required>
+                        Х = -2
+                    </label>
+                    <label>
+                        <input type="radio" name="q-9" value="2">
+                        Х = -5
+                    </label>
+                    <label>
+                        <input type="radio" name="q-9" value="3">
+                        Х = -4
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">
+                        Автоматическое устройство осуществило перекодировку информационного сообщения на русском языке, первоначально записанного в 16–битном коде Unicode, в 8–битную кодировку Windows–1251, при этом информационный объем сообщения составил 60 байт. Определите информационный объем в битах сообщения до перекодировки.
+                        </h2>
+                    <label>
+                        <input type="radio" name="q-10" value="1" required>
+                        1110 бит
+                    </label>
+                    <label>
+                        <input type="radio" name="q-10" value="2">
+                        935 бит
+                    </label>
+                    <label>
+                        <input type="radio" name="q-10" value="3">
+                        960 бит
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">
+                        16-цветный рисунок содержит 500 байт информации. Из скольких точек он состоит?
+                        </h2>
+                    <label>
+                        <input type="radio" name="q-11" value="1" required>
+                        32 точек
+                    </label>
+                    <label>
+                        <input type="radio" name="q-11" value="2">
+                        8000 точек
+                    </label>
+                    <label>
+                        <input type="radio" name="q-11" value="3">
+                        1000 точек
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">
+                        Музыкальная запись выполнена в формате CDDA (частота дискретизации 44100 Гц, 16 бит, стерео) и имеет продолжительность 19 мин 20 cек. Сколько секунд займет передача этой записи по каналу с пропускной способностью 16000 байт/сек?</h2>
+                    <label>
+                        <input type="radio" name="q-12" value="1" required>
+                        3622,2 сек
+                    </label>
+                    <label>
+                        <input type="radio" name="q-12" value="2">
+                        4420 сек
+                    </label>
+                    <label>
+                        <input type="radio" name="q-12" value="3">
+                        6394,5 сек
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">
+                        Сколько байтов информации содержится в сообщении размером четверть мегабайта?</h2>
+                    <label>
+                        <input type="radio" name="q-13" value="1" required>
+                        16 384 байта
+                    </label>
+                    <label>
+                        <input type="radio" name="q-13" value="2">
+                        262 144 байта
+                    </label>
+                    <label>
+                        <input type="radio" name="q-13" value="3">
+                        131 072 байта
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">
+                        Автоматическое устройство осуществило перекодировку информационного сообщения на русском языке, первоначально записанного в коде Windows-1251, в кодировку Unicode. При этом информационное сообщение увеличилось на 400 бит. Какова длина сообщения в символах?</h2>
+                    <label>
+                        <input type="radio" name="q-14" value="1" required>
+                        50 символов
+                    </label>
+                    <label>
+                        <input type="radio" name="q-14" value="2">
+                        60 символов
+                    </label>
+                    <label>
+                        <input type="radio" name="q-14" value="3">
+                        120 символов
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">
+                        Определить требуемый объем (в мегабайтах) видеопамяти для реализации графического режима монитора с разрешающей способностью 1024×768 пикселей при количестве отображаемых цветов 4 294 967 296</h2>
+                    <label>
+                        <input type="radio" name="q-15" value="1" required>
+                        3 Мбайт
+                    </label>
+                    <label>
+                        <input type="radio" name="q-15" value="2">
+                        12 Мбайт
+                    </label>
+                    <label>
+                        <input type="radio" name="q-15" value="3">
+                        8 Мбайт
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">
+                        Определить информационный объем в Кбайтах моноаудиофайла длительностью звучания 8 сек при глубине звука 8 бит и частоте 8 кГц.</h2>
+                    <label>
+                        <input type="radio" name="q-16" value="1" required>
+                        22 Кбайта
+                    </label>
+                    <label>
+                        <input type="radio" name="q-16" value="2">
+                        62,5 Кбайт
+                    </label>
+                    <label>
+                        <input type="radio" name="q-16" value="3">
+                        83,7 Кбайт
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">
+                        Выразите в килобайтах 2<sup>16</sup> байтов.</h2>
+                    <label>
+                        <input type="radio" name="q-17" value="1" required>
+                        38 Кбайт
+                    </label>
+                    <label>
+                        <input type="radio" name="q-17" value="2">
+                        64 Кбайта
+                    </label>
+                    <label>
+                        <input type="radio" name="q-17" value="3">
+                        29 Кбайт
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">
+                        Информационное сообщение объемом 1,5 Кбайта содержит 3072 символа. Сколько символов содержит алфавит, с помощью которого было записано сообщение?</h2>
+                    <label>
+                        <input type="radio" name="q-18" value="1" required>
+                        10 символов
+                    </label>
+                    <label>
+                        <input type="radio" name="q-18" value="2">
+                        12 символов
+                    </label>
+                    <label>
+                        <input type="radio" name="q-18" value="3">
+                        16 символов
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">
+                        Определить объем видеопамяти в Кбайтах для графического файла размером 1240x480 пикселей и глубиной цвета 16 бит</h2>
+                    <label>
+                        <input type="radio" name="q-19" value="1" required>
+                        881,6 Кбайт
+                    </label>
+                    <label>
+                        <input type="radio" name="q-19" value="2">
+                        1162,5 Кбайт
+                    </label>
+                    <label>
+                        <input type="radio" name="q-19" value="3">
+                        1005,2 Кбайт
+                    </label>
+                </div>
+                <div class="q-wrapper">
+                    <h2 class="q-test">
+                        При переводе в дискретную форму аналогового сигнала длительностью 2 мин 8 сек использовалась частота дискретизации 32 Гц и 16 уровней дискретизации. Найти в килобайтах размер полученного кода аналогового сигнала.</h2>
+                    <label>
+                        <input type="radio" name="q-20" value="1" required>
+                        3 Кбайт
+                    </label>
+                    <label>
+                        <input type="radio" name="q-20" value="2">
+                        2,4 Кбайт
+                    </label>
+                    <label>
+                        <input type="radio" name="q-20" value="3">
+                        7 Кбайт
+                    </label>
+                </div>
+                <input type="submit" value="Завершить тест">
+            </form>
+        </div>
+        
+    </div>
+    <script>
+        const form = document.querySelector("#qForm");
+        form.addEventListener('submit', (e) => {
+            setTimeout(function(){
+                window.close();
+            },5)
+        })
+    </script>
+</body>
+</html>

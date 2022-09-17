@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Кодирование графической информации</title>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h2>Тест самоконтроля</h2>
+        </div>
+        <div class="textarea">
+            <div class="q-wrapper">
+                <h2>Растровый графический файл содержит черно-белое изображение с 16 градациями серого цвета размером 10х10 пикселей. Каков информационный объем этого файла в битах?</h2>
+                <div id="res-1" class="result"></div>
+                <label for="radioB-1">
+                    <input type="radio" name="q-1" id="radioB-1">
+                    360 бит
+                </label>
+                <label for="radioB-2">
+                    <input type="radio" name="q-1" id="radioB-2">
+                    280 бит
+                </label>
+                <label for="radioB-3">
+                    <input type="radio" name="q-1" id="radioB-3">
+                    400 бит
+                </label>
+            </div>
+            <div class="q-wrapper">
+                <h2>256-цветный рисунок содержит 120 байт информации. Из скольких точек он состоит?</h2>
+                <div id="res-2" class="result"></div>
+                <label for="radioB-4">
+                    <input type="radio" name="q-2" id="radioB-4">
+                    195
+                </label>
+                <label for="radioB-5">
+                    <input type="radio" name="q-2" id="radioB-5">
+                    120
+                </label>
+                <label for="radioB-6">
+                    <input type="radio" name="q-2" id="radioB-6">
+                    164
+                </label>
+            </div>
+            <div class="q-wrapper">
+                <h2>Рассчитайте объём памяти в Кбайтах, необходимый для кодирования рисунка, построенного при графическом разрешении монитора 800х600 с палитрой 32 цвета.</h2>
+                <div id="res-3" class="result"></div>
+                <label for="radioB-7">
+                    <input type="radio" name="q-3" id="radioB-7">
+                    293 Кбайт
+                </label>
+                <label for="radioB-8">
+                    <input type="radio" name="q-3" id="radioB-8">
+                    60 Кбайт
+                </label>
+                <label for="radioB-9">
+                    <input type="radio" name="q-3" id="radioB-9">
+                    177 Кбайт
+                </label>
+            </div>
+            <div class="main-footer">
+                <button id='getResults'>Проверить</button>
+                <div class="links-wrapper">
+                    <a id="theoryLink" href="/graphic-info" hidden style="position: relative; right: 22px;">&#8592; Вернуться к теории</a>
+                    <a id="mainLink" href="/" hidden>Вернуться на главную &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/test-check.js"></script>
+    <script>
+        document.querySelector('#getResults').addEventListener('click', () => {
+            checkTest(['cmFkaW9CLTM=','cmFkaW9CLTU=','cmFkaW9CLTc=']);
+        });
+        
+    </script>
+</body>
+</html>

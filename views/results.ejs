@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Результаты</title>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h2>Ваш результат</h2>
+        </div>
+        <div class="textarea t-centered">
+            <h2 class="r-points">Вы набрали <%= points %> баллов из 20.</h2>
+            <a id="rToMain" href="/">Вернитесь на главную</a>
+            <p>...либо вы будете перенаправлены через <span id="seconds">10</span> секунд.</p>
+        </div>
+    </div>
+    <script>
+        const rToMain = document.querySelector("#rToMain");
+        const seconds = document.querySelector("#seconds");
+
+        rToMain.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.replace('/');
+        })
+        let i = 10;
+        setInterval(() => {
+            console.log(i);
+            seconds.textContent = i;
+            i--;
+            if (i == -1) {
+                window.location.replace('/');
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

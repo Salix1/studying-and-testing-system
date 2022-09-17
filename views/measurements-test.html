@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Измерение информации в технике</title>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h2>Тест самоконтроля</h2>
+        </div>
+        <div class="textarea">
+            <div class="q-wrapper">
+                <h2>8<sup>х</sup> = 32 Кб, найдите х</h2>
+                <div id="res-1" class="result"></div>
+                <label for="radioB-1">
+                    <input type="radio" name="q-1" id="radioB-1">
+                    2
+                </label>
+                <label for="radioB-2">
+                    <input type="radio" name="q-1" id="radioB-2">
+                    6
+                </label>
+                <label for="radioB-3">
+                    <input type="radio" name="q-1" id="radioB-3">
+                    4
+                </label>
+            </div>
+            <div class="q-wrapper">
+                <h2>4 Гбайта = ___ Мбайт</h2>
+                <div id="res-2" class="result"></div>
+                <label for="radioB-4">
+                    <input type="radio" name="q-2" id="radioB-4">
+                    4096
+                </label>
+                <label for="radioB-5">
+                    <input type="radio" name="q-2" id="radioB-5">
+                    2048
+                </label>
+                <label for="radioB-6">
+                    <input type="radio" name="q-2" id="radioB-6">
+                    4000
+                </label>
+            </div>
+            <div class="q-wrapper">
+                <h2>Сколько битов информации содержится в сообщении размером 8 байтов?</h2>
+                <div id="res-3" class="result"></div>
+                <label for="radioB-7">
+                    <input type="radio" name="q-3" id="radioB-7">
+                    8
+                </label>
+                <label for="radioB-8">
+                    <input type="radio" name="q-3" id="radioB-8">
+                    64
+                </label>
+                <label for="radioB-9">
+                    <input type="radio" name="q-3" id="radioB-9">
+                    32
+                </label>
+            </div>
+            <div class="main-footer">
+                <button id='getResults'>Проверить</button>
+                <div class="links-wrapper">
+                    <a id="theoryLink" href="/measurements" hidden style="position: relative; right: 22px;">&#8592; Вернуться к теории</a>
+                    <a id="mainLink" href="/" hidden>Вернуться на главную &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/test-check.js"></script>
+    <script>
+        document.querySelector('#getResults').addEventListener('click', () => {
+            checkTest(['cmFkaW9CLTI=','cmFkaW9CLTQ=','cmFkaW9CLTg=']);
+        });
+        
+    </script>
+</body>
+</html>

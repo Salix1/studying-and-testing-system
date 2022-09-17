@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Circe Regular';
+    src: url('../fonts/Circe-Regular.eot');
+    src: url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Circe-Regular.woff') format('woff'),
+    url('../fonts/Circe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: 'Circe Regular', Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #c3def5;
+}
+h2 {
+    margin: 0;
+    line-height: 30px;
+}
+h3 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+label {
+    margin-right: 15px;
+}
+a {
+    font-size: 25px;
+    color: #1A96F6;
+}
+a:visited {
+    color: #1A96F6;
+}
+a:hover {
+    color: #0c68ae;
+}
+input[type="submit"], button {
+    background-color: #1A96F6;
+    color: #ffff;
+
+    font-weight: bold;
+    font-size: 20px;
+
+    border: rgb(207, 207, 207) solid 1px;
+    height: 50px;
+    padding: 0px 15px;
+
+    cursor: pointer;
+}
+input[type="submit"]:hover, button:hover {
+    background-color: #0d75c5;
+}
+.linkfromtheory {
+    position: relative;
+    left: 875px;
+    bottom: 10px;
+}
+.main-footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+
+    height: 74px;
+
+    justify-content: space-between;
+}
+.links-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.m-f-t {
+    justify-content: right;
+}
+.main {
+    margin: 0 auto;
+    width: 80%;
+
+    background-color: #ffff;
+
+    border: rgb(207, 207, 207) solid 2px;
+    border-radius: 8px;
+}
+.title {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+
+    padding: 10px 32px;
+
+    background-color: #1A96F6;
+
+    color: #ffff;
+}
+.textarea {
+    padding: 20px 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+.t-centered {
+    display:block;
+    text-align: center;
+}
+.r-points {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.q-wrapper {
+    margin-bottom: 35px;
+}
+.result {
+    height: 20px;
+}
+.wrong {
+    color: red;
+    font-weight: bold;
+}
+.correct {
+    color: green;
+    font-weight: bold;
+}
+.person-info {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+input[type="text"], select {
+    width: 320px;
+    font-size: 20px;
+}
+label {
+    user-select: none;
+}
+.q-test {
+    margin-bottom: 20px;
+}

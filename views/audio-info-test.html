@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Кодирование звуковой информации</title>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h2>Тест самоконтроля</h2>
+        </div>
+        <div class="textarea">
+            <div class="q-wrapper">
+                <h2>Определить информационный объем цифрового аудио файла длительность звучания которого составляет 10 секунд при частоте дискретизации 22,05 кГц и разрешении 8 битов.</h2>
+                <div id="res-1" class="result"></div>
+                <label for="radioB-1">
+                    <input type="radio" name="q-1" id="radioB-1">
+                    220500 байт
+                </label>
+                <label for="radioB-2">
+                    <input type="radio" name="q-1" id="radioB-2">
+                    100500 байт
+                </label>
+                <label for="radioB-3">
+                    <input type="radio" name="q-1" id="radioB-3">
+                    460220 байт
+                </label>
+            </div>
+            <div class="q-wrapper">
+                <h2>Оцените информационный объём цифрового звукового стерео файла длительностью 20 секунд при глубине кодирования 16 бит и частоте дискретизации 10000 Гц. Результат представить в Кбайтах, округлить до целых.</h2>
+                <div id="res-2" class="result"></div>
+                <label for="radioB-4">
+                    <input type="radio" name="q-2" id="radioB-4">
+                    781 Кбайт
+                </label>
+                <label for="radioB-5">
+                    <input type="radio" name="q-2" id="radioB-5">
+                    1011 Кбайт
+                </label>
+                <label for="radioB-6">
+                    <input type="radio" name="q-2" id="radioB-6">
+                    2077 Кбайт
+                </label>
+            </div>
+            <div class="q-wrapper">
+                <h2>Объем свободной памяти на диске — 5,25 Мб, разрядность звуковой платы — 16. Какова длительность звучания цифрового аудиофайла, записанного с частотой дискретизации 22,05 кГц?</h2>
+                <div id="res-3" class="result"></div>
+                <label for="radioB-7">
+                    <input type="radio" name="q-3" id="radioB-7">
+                    124,8 секунды
+                </label>
+                <label for="radioB-8">
+                    <input type="radio" name="q-3" id="radioB-8">
+                    88 секунд
+                </label>
+                <label for="radioB-9">
+                    <input type="radio" name="q-3" id="radioB-9">
+                    140,1 секунд
+                </label>
+            </div>
+            <div class="main-footer">
+                <button id='getResults'>Проверить</button>
+                <div class="links-wrapper">
+                    <a id="theoryLink" href="/audio-info" hidden style="position: relative; right: 22px;">&#8592; Вернуться к теории</a>
+                    <a id="mainLink" href="/" hidden>Вернуться на главную &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/test-check.js"></script>
+    <script>
+        document.querySelector('#getResults').addEventListener('click', () => {
+            checkTest(['cmFkaW9CLTE=','cmFkaW9CLTQ=','cmFkaW9CLTc=']);
+        });
+
+    </script>
+</body>
+</html>
